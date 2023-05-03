@@ -7,7 +7,6 @@ use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-use pocketmine\utils\Color;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
@@ -86,16 +85,6 @@ class Main extends PluginBase implements Listener {
         }
         return false;
     }
-
-    private function getColorValues(string $colorStr): array {
-        $color = str_replace(" ", "", strtolower($colorStr));
-        $color = preg_replace("/[^a-f0-9]/", "", $color);
-        if (strlen($color) === 3) {
-            $color = str_repeat(substr($color, 0, 1), 2) . str_repeat(substr($color, 1, 1), 2) . str_repeat(substr($color, 2, 1), 2);
-        }
-        return [hexdec(substr($color, 0, 2)), hexdec(substr($color, 2, 2)), hexdec(substr($color, 4, 2))];
-    }
-
 
     private function getRank($player) {
         if ($player->getServer()->isOp($player->getName())) {
