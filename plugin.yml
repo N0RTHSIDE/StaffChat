@@ -1,0 +1,31 @@
+---
+name: StaffChat
+main: HeyItzKillerMC\Main
+version: 1.0.0
+api: 4.0.0
+author: HeyItzKillerMC
+description: A basic in-game staff chat for PM4
+
+commands:
+  staffchat:
+    description: Toggle staff chat
+    aliases: ["sc"]
+    permission: staffchat.use
+
+permissions:
+  staffchat.use:
+    default: op
+    description: Permission to use staff chat command
+  staffchat.helper:
+    default: false
+    description: Permission for Helpers to use staff chat
+  staffchat.mod:
+    default: false
+    description: Permission for Mods to use staff chat
+  staffchat.admin:
+    default: false
+    description: Permission for Admins to use staff chat
+  staffchat.manager:
+    default: false
+    description: Permission for Managers to use staff chat
+...

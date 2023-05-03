@@ -1,0 +1,7 @@
+ranks:
+  Helper: "staffchat.helper"
+  Mod: "staffchat.mod"
+  Admin: "staffchat.admin"
+  Manager: "staffchat.manager"
+
+staff_chat_format: "&l&7» &r&f[&l&5S&r&f] &d{PLAYER}&8: &f{MSG}"
