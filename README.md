@@ -1,5 +1,5 @@
-# StaffChat
- A basic staff chat plugin for PM4
+# Staff Chat
+ An advanced staff chat plugin built for PM4 servers.
 
 - [x] Customizable Format *(config.yml)*
 - [x] Staff Chat Prefix *(ex. "!test" - sends in staff chat)*
